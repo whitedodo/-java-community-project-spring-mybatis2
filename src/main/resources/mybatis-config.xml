@@ -9,6 +9,7 @@
 	<typeAliases>
 		<typeAlias alias="BoardVO" type="com.community.website.vo.BoardVO" />
 		<typeAlias alias="MemberVO" type="com.community.website.vo.MemberVO" />
+		<typeAlias alias="FileVO" type="com.community.website.vo.FileVO" />
 	</typeAliases>
 	
 	<!-- MyBatis Mapper 파일이 추가될 때마다 추가할 것 -->

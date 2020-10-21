@@ -1,8 +1,8 @@
-# Spring Framework 4.2.4 Releases에서 MyBatis, HikariCP, XML 설정방식(XML Mapper) 회원 AOP, 게시판 구현(방식2) root-context.xml (메인, 회원 기능, 다중 게시판 구현)
-(In Spring Framework 4.2.4 Releases, MyBatis, HikariCP, XML configuration method (XML Mapper) member AOP, bulletin board implementation (method 1) root-context.xml)
+# Spring Framework 4.2.4 Releases에서 MyBatis, HikariCP, XML 설정방식(XML Mapper) 회원 AOP, 게시판 구현(방식2) root-context.xml (메인, 회원 기능, 다중 게시판 구현, 파일업로드)
+(In Spring Framework 4.2.4 Releases, MyBatis, HikariCP, XML configuration method (XML Mapper) member AOP, bulletin board implementation (method 2) root-context.xml (main, member function, multiple bulletin board implementation, file upload)
 
 ### 기본 정보(Information)
-##### 제작일자(Create date): 2020-10-20
+##### 제작일자(Create date): 2020-10-21
 ##### 작성언어(Write language): Java
 ##### IDE: Eclipse IDE with Spring Tool Suite 4-4.7.2.
 ##### 제작자(Author): 도도(Dodo) / rabbit.white at daum dot net
@@ -42,6 +42,10 @@
 #####    (Membership security function was applied using Spring Interceptor.)
 ##### 6. 스프링 인터셉터로 preHandler, postHandler로 페이지를 관리하였다.
 #####    (Pages were managed with preHandler and postHandler with Spring Interceptor.)
+##### 7. 파일업로드, 삭제, 다운로드 기능을 추가하였다.
+#####    (File upload, delete, and download functions have been added.)
+##### 8. 암호화 패키지 등을 추가시켰다.
+#####    (Added encryption package, etc.)
 
 ### 2. 시연(Practice)
 ##### 1. 

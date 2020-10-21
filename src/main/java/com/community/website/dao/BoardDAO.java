@@ -37,6 +37,9 @@ public interface BoardDAO {
 	// 게시판 내용 추가 insert
 	public void insertBoard(BoardMultiVO vo);
 	
+	// 게시판 파일 내용 추가 insert
+	public void insertFileVOBoard(FileMultiVO vo);
+	
 	// 셈플 DB 추가 시키기
 	public void insertSample(String boardname);
 	
@@ -45,5 +48,11 @@ public interface BoardDAO {
 	
 	// 게시판 삭제 delete
 	public void removeBoard(@Param("id") String id);
+	
+	// 파일 등록 내용 조회
+	public List<FileVO> selectFileVOBoard(FileMultiVO vo);
+	
+	// 파일 다운로드 조회
+	public FileVO selectFileVOInfo(FileMultiVO vo);
 	
 }

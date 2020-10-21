@@ -26,6 +26,8 @@ import org.springframework.transaction.support.DefaultTransactionDefinition;
 
 import com.community.website.vo.BoardMultiVO;
 import com.community.website.vo.BoardVO;
+import com.community.website.vo.FileMultiVO;
+import com.community.website.vo.FileVO;
 
 @Repository("boardDAO")
 public class BoardDAOImpl implements BoardDAO{
@@ -51,6 +53,7 @@ public class BoardDAOImpl implements BoardDAO{
 	@Override
 	public BoardVO selectBoard(BoardMultiVO vo) {
 		
+		System.out.println("셀렉트:" + vo.getRegidate());
 		return sqlSession.selectOne(Namespace + ".selectBoardIdentify", vo);
 	}
 	
@@ -121,6 +124,16 @@ public class BoardDAOImpl implements BoardDAO{
 	}
 
 	@Override
+	public void insertFileVOBoard(FileMultiVO vo) {
+		
+		if (sqlSession != null )
+			sqlSession.insert(Namespace + ".insertBoardFileVO", vo);
+		else {
+			System.out.println("널");
+		}
+	}
+
+	@Override
 	public void updateBoard(BoardVO vo) {
 		// TODO Auto-generated method stub
 		
@@ -132,6 +145,16 @@ public class BoardDAOImpl implements BoardDAO{
 		
 	}
 
+	@Override
+	public List<FileVO> selectFileVOBoard(FileMultiVO vo) {
+		
+		return sqlSession.selectList(Namespace + ".selectFileInfo", vo);
+		
+	}
 
+	@Override
+	public FileVO selectFileVOInfo(FileMultiVO vo) {
+		return sqlSession.selectOne(Namespace + ".selectFileDownInfo", vo);
+	}
 	
 }

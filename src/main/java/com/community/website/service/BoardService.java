@@ -13,6 +13,7 @@ import java.util.List;
 
 import com.community.website.vo.BoardMultiVO;
 import com.community.website.vo.BoardVO;
+import com.community.website.vo.FileMultiVO;
 import com.community.website.vo.FileVO;
 
 public interface BoardService {
@@ -29,6 +30,8 @@ public interface BoardService {
 	public void insertSample(String boardname);
 	
 	public void insertBoard(BoardMultiVO vo);
-	public void insertFileinfo(FileVO vo);
+	public void insertFileVOBoard(FileMultiVO vo);
 	
+	public List<FileVO> selectFileVOBoard(FileMultiVO vo);
+	public FileVO selectFileVOInfo(FileMultiVO vo);
 }

@@ -32,10 +32,25 @@
 			subject = #{subject} and regidate = #{regidate} and ip = #{ip}
 	</select>
 	
+	<select id="selectFileInfo" resultType="FileVO">
+		select * from board_file_${boardname} where board_id = #{board_id} order by idx desc
+	</select>
+	
+	<select id="selectFileDownInfo" resultType="FileVO">
+		select * from board_file_${boardname} where idx = #{idx} and board_id = #{board_id}
+	</select>
+	
 	<insert id="insertBoard" parameterType="com.community.website.vo.BoardMultiVO">
-		insert into board_${boardname}(name, subject, memo, count, regidate)
+		insert into board_${boardname}(name, subject, memo, count, regidate, ip)
 		values 
-		(#{name},#{subject},#{memo},#{count},#{regidate})
+		(#{name},#{subject},#{memo},#{count},#{regidate},#{ip})
+	</insert>
+	
+	<insert id="insertBoardFileVO" parameterType="com.community.website.vo.FileMultiVO">
+		insert into board_file_${boardname}(realname, filedir, filename, fileext, 
+			contenttype, filesize, board_id, regidate, ip)
+		values (#{realname},#{filedir},#{filename},#{fileext},#{contenttype},#{filesize},
+				#{board_id},#{regidate},#{ip})
 	</insert>
 	
 	<insert id="insertSample" parameterType="com.community.website.vo.BoardMultiVO">

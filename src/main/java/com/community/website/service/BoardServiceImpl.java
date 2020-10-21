@@ -18,6 +18,7 @@ import org.springframework.stereotype.Repository;
 import com.community.website.dao.BoardDAO;
 import com.community.website.vo.BoardMultiVO;
 import com.community.website.vo.BoardVO;
+import com.community.website.vo.FileMultiVO;
 import com.community.website.vo.FileVO;
 
 @Repository("boardService")
@@ -69,10 +70,22 @@ public class BoardServiceImpl implements BoardService {
 	}
 
 	@Override
-	public void insertFileinfo(FileVO vo) {
+	public void insertFileVOBoard(FileMultiVO vo) {
+
+		boardDAO.insertFileVOBoard(vo);
 		
-		
-		
+	}
+
+	@Override
+	public List<FileVO> selectFileVOBoard(FileMultiVO vo) {
+
+		return boardDAO.selectFileVOBoard(vo);
+	}
+
+	@Override
+	public FileVO selectFileVOInfo(FileMultiVO vo) {
+
+		return boardDAO.selectFileVOInfo(vo);
 	}
 
 

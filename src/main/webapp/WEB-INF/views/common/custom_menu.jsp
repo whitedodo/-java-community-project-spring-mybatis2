@@ -51,8 +51,8 @@
     </a>
     <a class="nav-link" href="#">Explore</a>
     <a class="nav-link" href="#">Suggestions</a>
-    <a class="nav-link" href="${contextPath}/main/board/list/notice">Notice</a>
-    <a class="nav-link" href="${contextPath}/main/board/list/sample">Sample</a>
+    <a class="nav-link" href="${contextPath}/main/board/list.do?boardname=notice">Notice</a>
+    <a class="nav-link" href="${contextPath}/main/board/list.do?boardname=sample">Sample</a>
     <a class="nav-link" href="#">Link</a>
     <a class="nav-link" href="#">Link</a>
     <a class="nav-link" href="#">Link</a>

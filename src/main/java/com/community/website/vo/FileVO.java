@@ -13,6 +13,7 @@ public class FileVO {
 	private long filesize;
 	private long board_id;
 	private Timestamp regidate;
+	private String ip;
 	
 	public long getIdx() {
 		return idx;
@@ -67,6 +68,12 @@ public class FileVO {
 	}
 	public void setRegidate(Timestamp regidate) {
 		this.regidate = regidate;
+	}
+	public String getIp() {
+		return ip;
+	}
+	public void setIp(String ip) {
+		this.ip = ip;
 	}
 	
 }

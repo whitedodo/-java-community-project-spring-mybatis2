@@ -84,7 +84,9 @@
 
 
 <!-- 본문 -->
-<form action="${pageUrl}/write_ok/${boardname}" method="POST" enctype="multipart/form-data">
+<form action="${pageUrl}/write_ok.do" method="POST" enctype="multipart/form-data">
+
+<input name="boardname" type="hidden" value="${boardname}" />
 <input name="token_csrf" type="hidden" value="" />
 
 <table class="board_tbl">

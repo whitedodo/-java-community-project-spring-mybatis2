@@ -102,7 +102,7 @@
 		<tr>
 			<td>${board.id }</td>
 			<td align="left">
-				<a href="${pageUrl}/view/${boardname}?id=${board.id}">${board.subject}</a>
+				<a href="${pageUrl}/view.do?boardname=${boardname}&id=${board.id}">${board.subject}</a>
 			</td>
 			<td>${board.name}</td>
 			<td>${board.count}</td>
@@ -136,13 +136,7 @@
 	<table class="foot_tbl">
 		<tr>
 			<td>
-				<a href="${pageUrl}/write/${boardname}">등록</a>
-			</td>
-			<td>
-				<a href="${pageUrl}/delete/${boardname}?page=${pageid}">삭제</a>		
-			</td>
-			<td>
-				<a href="${pageUrl}/list/${boardname}">글 목록</a>		
+				<a href="${pageUrl}/write.do?boardname=${boardname}">등록</a>
 			</td>
 		</tr>
 	</table>

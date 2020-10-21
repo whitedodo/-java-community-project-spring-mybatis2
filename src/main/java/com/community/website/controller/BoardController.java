@@ -184,7 +184,7 @@ public class BoardController {
 		
 		boolean status = false;
 		
-		List<File> fileLst = new ArrayList<File>(); 
+		List<MultipartFile> fileLst = new ArrayList<MultipartFile>(); 
 		
 		// Save mediaFile on system
 		for (MultipartFile file : files) {
