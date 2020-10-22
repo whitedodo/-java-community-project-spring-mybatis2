@@ -158,7 +158,7 @@
 							</a>
 						</td>
 						<td style="width:10%;">
-							<a href="${pageUrl}/download.do?boardname=${boardname}&id=${file.board_id}&fileid=${file.idx}">
+							<a href="${pageUrl}/download_remove.do?boardname=${boardname}&id=${file.board_id}&fileid=${file.idx}">
 								삭제
 							</a>
 						</td>
