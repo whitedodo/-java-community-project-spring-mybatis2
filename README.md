@@ -48,7 +48,8 @@
 #####    (Added encryption package, etc.)
 
 ### 2. 시연(Practice)
-##### 1. 
+##### 1. Spring Framework 4.2.4, MyBatis, Oracle 11g, Member AOP, Board Community PJT - 1, https://www.youtube.com/watch?v=cnzzUlCQDCo, Accessed by 2020-10-25, Last Modified 2020-10-25.
+##### 2. Spring Framework 4.2.4, MyBatis, Oracle 11g, Member AOP, Board Community PJT - 2, https://www.youtube.com/watch?v=zHDRc45peno, Accessed by 2020-10-25, Last Modified 2020-10-25.
 
 ### 3. 참고자료(References)
 ##### 1. MyBatis - 마이바티스 3 | 매퍼 XML 파일, https://mybatis.org/mybatis-3/ko/sqlmap-xml.html, Accessed by 2020-10-12, Last Modified 2020-07-10.
